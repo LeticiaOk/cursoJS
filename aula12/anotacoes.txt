@@ -1,0 +1,24 @@
+CONDIÇÕES 2
+
+Condições múltiplas:
+
+      CONDIÇÃO
+        //\\
+        ....
+        \\//
+        FIM
+
+switch (expressão){
+    case valor 1:
+        bloco
+        break
+    case valor 2:
+        bloco
+        break
+    case valor 3
+        bloco
+        break
+    default:
+        bloco
+        break
+}

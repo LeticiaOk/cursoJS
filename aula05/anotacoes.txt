@@ -1,0 +1,53 @@
+VARIAVEIS
+
+Formas de declarar variaveis str:
+
+var s1 = "JavaScript"
+var s2 =  'Curso em vídeo'
+var s3 =  `Guanabara`
+
+-----------------------------------------------------
+Regras:
+
+- Podem começar com letra, $ ou _
+- Não podem começar com números
+- É possível usar letras ou números
+- É possível usar acentos e símbolos
+- Não podem conter espaços
+- Não podem ser palavras reservadas
+
+------------------------------------------------------
+Tipos primitivos:
+
+Java Script não diferencia números inteiros de números
+reais.
+Todos estão em um conjunto chamado 'number'.
+
+true e false são valores 'boolean'
+
+-----------------------------------------------
+Outros tipos primitivos:
+
+Dentro de 'number' temos 'Infinity' e 'NaN'
+
+null
+
+undefined
+
+object
+Dentro de 'object' temos Array
+
+function
+---------------------------------------------------
+
+Typeof:
+
+Usado para mostrar o valor de algum dado
+var n = 200
+
+typeof n
+'number'
+
+---------------------------------------------------
+Curiosidade:
+Pro Java Script 'null' é um object ou objeto

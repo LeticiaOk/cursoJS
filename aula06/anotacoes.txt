@@ -1,0 +1,62 @@
+Conversão de strings para números:
+
+var a = '5'
+
+Number.parseInt(a)      converte para inteiro
+Number.parseFloat(a)    converte para real
+Number(a)               converte para numero  
+
+----------------------------------------------
+Conersão de números para strings:
+
+var b = 5
+
+String(b)       maneira 1
+b.toString()    maneira 2
+
+----------------------------------------------
+Formatando strings:
+
+var s = 'JavaScript'
+
+'Eu estou aprendendo s'     não faz interpolação
+    Eu estou aprendendo s
+ 
+'Eu estou aprendendo' + s   usa concatenação
+    Eu estou aprendendo JavaScript
+
+`Eu estou aprendendo ${s}`  usa template string
+    Eu estou aprendendo JavaScript
+
+-----------------------------------------------
+
+Formatando Strings 2:
+
+var s =  'JavaScript'
+
+s.length            quantos caracteres a string tem
+s.toUpperCase()     tudo para 'MAIÚSCULAS'
+s.toLowerCase()     tudo para 'minúsculas'
+
+------------------------------------------------
+Formatando números:
+
+var n1 = 1543.5
+
+n1.toFixed(2) Converte para 2 casas decimais
+    1543.50
+
+n1.replace('.', ',') Converte o ponto em vírgula
+    1543,5
+
+ n1.toFixed(2).replace('.', ',') faz ambos
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) Converte para Real
+'R$ 1.543,50'
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}) Converte para Dollar
+'US$ 1.543,50'
+
+S$ 1.543,50'
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}) Converte para Euro
+'€ 1.543,50'

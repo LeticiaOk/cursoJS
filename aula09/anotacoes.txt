@@ -1,0 +1,166 @@
+INTRODUÇÃO AO DOM
+Document Object Model
+
+Arvore DOM:
+
+                    window
+              /        |        \
+            location document history
+                       |
+                      html
+                    /   \
+                head      body
+                / |      / | | \
+            meta title    h1 p p div
+                                |
+                              strong
+Todos são elementos.
+
+Exemplos:
+window.document.write(window.document.charset) // UTF-8
+window.document.write(window.navigator.appCodeName) //Mozilla
+window.document.write(window.document.URL) //http://127.0.0.1:5500/aula09/ex005.html
+
+---------------------------------------------------------------------------------------
+
+Selecionando:
+
+Por marca:
+getEelementByTagName()
+
+================================================================
+<p>Aqui vai o resultado</p>
+<p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+==================================================================
+
+EX 1:
+
+<script>
+    var p1 = window.document.getElementsByTagName('p')[1]
+    window.document.write('Está escrito assim: ' + p1.innerText)
+</script>
+
+// HTML: Está escrito assim: Aprendendo a usar o DOM em JavaScript.
+// Sem formatação em negrito do 'DOM'
+
+=================================================================
+EX 2:
+
+<script>
+    var p1 = window.document.getElementsByTagName('p')[0]
+    p1.style.color = 'blue'
+</script>
+
+// HTML: Mudou a cor do parágrafo 0 para azul
+
+==================================================================
+EX 3:
+
+<script>
+    var corpo = window.document.body
+    corpo.style.background = 'black'
+</script>
+    
+// HTML: Mudou a cor de fundo para preto
+
+==================================================================
+EX 4:
+
+<script>
+    var p1 = window.document.getElementsByTagName('p')[1]
+    document.write(p1.innerHTML)
+</script>
+
+//HTML: Aprendendo a usar o DOM em JavaScript.
+//Com formatação em negrito no DOM
+
+==================================================================
+EX 5:
+
+<script>
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[1]
+        
+    window.alert(p1.innerText)
+</script>
+
+// WINDOW: Aprendendo a usar o DOM em JavaScript.
+// Janela com o texto sem formatação
+
+--------------------------------------------------------------------
+Por ID:
+getElementeById()
+
+==================================
+<div id="msg">Clique em mim</div>
+=================================
+
+EX 1:
+
+<script>
+    d.style.background = 'green'
+    d.innerText = 'Estou aguardando...'
+</script>
+
+//Mudou a cor de fundo e o conteudo da div.
+
+===============================================
+EX 2:
+
+<script:
+    d.style.background = 'green'
+    window.document.getElementById('msg').innerText = 'Olá'
+</script>
+
+// Mudou diretamente o conteudo da div.
+// Não preciso de 'window'
+
+-----------------------------------------------------------------
+Por Nome:
+getEelementsByTagName()
+
+=====================================
+<div name="msg">Clique em mim</div>
+=====================================
+
+EX 1:
+<script>
+    var d = window.document.getElementsByName('msg')[0]
+    d.innerText = 'Olá'
+</script>
+
+//Mudou o conteudo da div.
+
+-----------------------------------------------------------
+Por classe:
+getElementsByClassName()
+
+=====================================
+<div class="msg">Clique em mim</div>
+=====================================
+
+EX 1:
+<script>
+    var d = window.document.getElementsByClassName('msg')[0]
+    d.innerText = 'Olá'
+</script>
+
+//Mudou o conteudo da div.
+------------------------------------------------------------
+
+Por seletor:
+querySelector()
+querySelectorAll()
+
+=====================================
+<div id="msg">Clique em mim</div>
+=====================================
+
+EX 1:
+<script>
+    var d = window.document.querySelector('div#msg')
+    d.style.background= 'blue'
+</script>
+
+//Mudou a cor de fundo da div para azul
+//class ao invés de id: querySelector('div.msg')

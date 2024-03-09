@@ -1,0 +1,15 @@
+OPERADORES
+
+Ordem de precedência:
+
+()
+**
+* / % ordem de precedência da esquerda para direira 
++ -
+
+Incremento:
+n++ incrementa 1 depois
+++n descrementa 1 antes
+
+n-- incrementa 1 depois
+--n descrementa 1 antes

@@ -1,0 +1,5 @@
+REPETIÇÕES 2
+
+for(inicio;teste;incr){
+    
+}

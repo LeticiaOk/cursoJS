@@ -1,0 +1,28 @@
+VARIÁVEIS COMPOSTAS
+
+var num = [5,8,4]
+
+Um array é uma variavel que tem varios elementos cada elemento é composto por seu valor e por uma chave de identificação.
+
+num[3] = 6 // adiciona o valor 6 à posição 3 da variável.
+[5,8,4,6]
+
+num.push(7) // adiciona um valor a última posição da variável.
+[5,8,4,6,7]
+
+num.length // Lê quantos valores tem na variável (5)
+
+num.sort() // Coloca os valores em ordem crescente
+[4,5,6,7,8]
+
+console.log(num[0]) // Mostra o primeiro valor do vetor (4)
+
+for(let pos = 0; pos < num.length; pos++){
+    console.log(num[pos])
+} // vai escrevendo cada uma dos valores do vetor 
+
+for(let pos in num){      // para cada posição em num
+    console.log(num[pos]) // Mostrar o valor da pos
+}
+
+num.indexOf(7) Procura onde está o valor 7 no vetor (retorna o índice) se não tiver o valor no vetor retorna -1

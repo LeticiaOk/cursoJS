@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NACIONALIDADE</title>
+    <style>
+        *{
+            font-family: Arial;
+            padding: 0px;
+        }
+
+        #container{
+            background-color: rgb(42, 42, 42);
+            color: white;
+            width: auto;
+            display: inline-block;
+            padding: 10px;
+            border-radius: 15px;
+           
+        }
+
+        input[type="button"]{
+            background-color: rgb(232, 101, 123);
+            border-style: none;
+            border-radius: 15px;
+            padding: 10px 20px;
+            color:rgb(42, 42, 42);
+            font-weight: bolder;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        input[type="text"]{
+            border-radius: 15px ;
+            border: solid 2px rgb(232, 101, 123);
+            padding:5px;
+        }
+
+        #res{
+            
+            border-radius: 15px;
+            padding: 0.5px 0px 0.5px 10px
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Sistema Nacionalidade</h1>
+        País de origem: <input type="text" name="pais" id="pais">
+        <p><input type="button" value="Verificar" onclick="nacionalidade()"></p>
+        
+        <div id="res"></div>
+    </div>
+    
+    <script>
+        function nacionalidade(){
+            var pais = document.getElementById('pais')
+            var res = document.getElementById('res')
+            res.style.backgroundColor = 'rgb(64, 64, 64)'
+            res.innerHTML = `<p>País: <strong>${pais.value}</strong></p>`
+            if (pais.value != 'Brasil'){
+                res.innerHTML += '<p>Você é <strong>Estrangeiro!</strong></p>'
+            }
+            else{
+                res.innerHTML += '<p>Você é <strong>Brasileiro!</strong></p>'
+            }
+        }   
+    </script>
+</body>
+</html>

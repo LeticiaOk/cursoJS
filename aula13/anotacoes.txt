@@ -1,0 +1,9 @@
+REPETIÇÕES
+
+while(dondição){
+
+}
+
+do{
+
+}while(condição)
